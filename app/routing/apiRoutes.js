@@ -25,8 +25,6 @@ module.exports = function(app) {
   // Then the server saves the data to the friends array)
   // ---------------------------------------------------------------------------
   app.post("/api/friends", function(req, res) {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
     friends.push(req.body);
     res.json(true);
   });
